@@ -1,0 +1,25 @@
+#include<iostream>
+#include<set>
+#include<vector>
+using namespace std;
+int main()
+{
+	set <char*> s;
+//	vector <string> v;
+	string temp;
+	int i;
+
+	for(i=0;i<5;i++)
+	{
+		cin>>temp;
+		s.insert(temp);
+	}
+
+	vector <char*> v(s);
+
+	for(i=0;i<5;i++)
+	{
+		cout<<v[i]<<"\n";
+	}
+	return 0;
+}
